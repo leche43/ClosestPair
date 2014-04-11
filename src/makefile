@@ -7,6 +7,8 @@ JC = javac
 CLASSES = \
 	Point.java \
 	ReadPointsFile.java \
+	ClosestPair.java \
+	ComputeClosestPair.java \
 
 default: classes
 
