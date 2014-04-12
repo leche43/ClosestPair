@@ -4,8 +4,10 @@ public class ClosestPair {
     private Point b;
     private Double distance;
 
-    public ClosestPair() {
-
+    public ClosestPair(Point a, Point b, Double distance) {
+        this.a = a;
+        this.b = b;
+        this.distance = distance;
     }
 
     public Point getA() {

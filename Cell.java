@@ -5,10 +5,6 @@ public class Cell {
     // y cell number, not coordinate
     private int y;
 
-    public Cell() {
-
-    }
-
     public Cell(int x, int y) {
         this.x = x;
         this.y = y;

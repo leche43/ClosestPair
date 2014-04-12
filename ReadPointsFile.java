@@ -17,7 +17,6 @@ public class ReadPointsFile {
             points = new ArrayList<Point>();
 
             while ((currentLine = br.readLine()) != null) {
-                // TODO make prettier
                 Point point = new Point();
                 point.setX(Integer.parseInt(currentLine));
                 if ((currentLine = br.readLine()) != null) {
@@ -31,15 +30,12 @@ public class ReadPointsFile {
         } finally {
             try {
                 if (br != null) {
-                    //TODO is != null correct?
                     br.close();
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
-
         return points;
     }
-
 }
