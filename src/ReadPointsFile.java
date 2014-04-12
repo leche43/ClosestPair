@@ -6,9 +6,7 @@ import java.util.List;
 
 public class ReadPointsFile {
 
-    private static final String fileName = "small.txt";
-
-    public static List<Point> readPointsFromFile() {
+    public static List<Point> readPointsFromFile(String fileName) {
         BufferedReader br = null;
 
         List<Point> points = null;

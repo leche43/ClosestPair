@@ -34,10 +34,11 @@ public class ClosestPair {
 
     @Override
     public String toString() {
-        return "ClosestPair{" +
-                "a=" + a +
-                ", b=" + b +
-                ", distance=" + distance +
-                '}';
+        return "The closest pair is: "
+               + a
+               + ","
+               + b
+               + "\n"
+               + "distance: " + distance;
     }
 }
