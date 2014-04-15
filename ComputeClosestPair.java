@@ -10,7 +10,7 @@ public class ComputeClosestPair {
         System.out.println("********************Closest Pair Computation********************");
         Long startSmall = System.currentTimeMillis();
         List<Point> pointsSmall = ReadPointsFile.readPointsFromFile(SMALL);
-        ClosestPair closestPairSmall = RandomizedGrid.computeClosestPairRandom(pointsSmall);
+        ClosestPair closestPairSmall = RandomizedGrid.computeCP(pointsSmall);
         Long endSmall = System.currentTimeMillis();
         Long timeSmall = endSmall-startSmall;
         System.out.println("Using the small list:");
@@ -19,7 +19,7 @@ public class ComputeClosestPair {
 
         Long startLarge = System.currentTimeMillis();
         List<Point> pointsLarge = ReadPointsFile.readPointsFromFile(LARGE);
-        ClosestPair closestPairLarge = RandomizedGrid.computeClosestPairRandom(pointsLarge);
+        ClosestPair closestPairLarge = RandomizedGrid.computeCP(pointsLarge);
         Long endLarge = System.currentTimeMillis();
         Long timeLarge = endLarge-startLarge;
         System.out.println("Using the large list:");

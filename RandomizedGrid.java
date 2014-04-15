@@ -10,7 +10,7 @@ public class RandomizedGrid {
     /**
      * This computes the closest pair using the randomized algorithm introduces in the lecture E(X)=O(n) 
      */
-    public static ClosestPair computeClosestPairRandom(List<Point> points) {
+    public static ClosestPair computeCP(List<Point> points) {
         // 1 Bring list of points in random order
         List<Point> shuffledPoints = shuffle(points);
 

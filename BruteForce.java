@@ -5,7 +5,7 @@ public class BruteForce {
      * This computes the closest pair using brute-force O(n²)
      * This is only implemented for test purposes
      */
-    public static ClosestPair computeClosestPairBruteForce(List<Point> points) {
+    public static ClosestPair computeCP(List<Point> points) {
         ClosestPair closestPair = new ClosestPair(points.get(0),points.get(1),Double.POSITIVE_INFINITY);
 
         for(int i=0; i<points.size(); i++) {
